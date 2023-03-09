@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install
+      - npm install -g serverless
+  build:
+    commands:
+      - |-
+        if [ "$STAGE" = 'Dev' ]; then
+          - serverless deploy --stage dev
+        elif [ "$STAGE" = 'Qa' ]; then
+          - serverless deploy --stage qa
+        else
+          - serverless deploy --stage prod
+        fi
+
+cache:
+  paths:
+    - node_modules

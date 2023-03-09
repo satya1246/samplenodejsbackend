@@ -1,0 +1,17 @@
+{
+    "Bad Request": {
+        "errorDescription":"Request Body Missing :",
+        "statusCode": 400,
+        "status":"failed"
+    },
+    "Internal Server Error": {
+        "errorDescription":"Internal Server Error :",
+        "statusCode": 500,
+        "status":"failed"
+    },
+    "Response timeout": {
+        "errorDescription":"Request timed out :",
+        "statusCode": 504,
+        "status":"failed"
+    }
+}

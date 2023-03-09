@@ -1,0 +1,4 @@
+19-10-2022 17:00:27 [index] info: MethodType : GET, Method : /health
+19-10-2022 17:00:27 [index] info: MethodType : GET, Method : /health, Status : 200, Execution Time : 0.038 s
+19-10-2022 17:00:36 [index] info: MethodType : GET, Method : /health
+19-10-2022 17:00:36 [index] info: MethodType : GET, Method : /health, Status : 304, Execution Time : 0.045 s
